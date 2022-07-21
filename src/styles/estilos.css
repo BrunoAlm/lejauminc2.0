@@ -1,0 +1,9 @@
+#marca {
+    font-family: 'Georama';
+    display: flex;
+    font-weight: 500;
+    line-height: 36px;
+    font-style: italic;
+    font-size: 30px;
+    color: #F4F4F4;
+}
