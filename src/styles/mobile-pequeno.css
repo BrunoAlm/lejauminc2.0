@@ -1,40 +1,38 @@
 /* 
-
     Aqui tem os estilos do mobile menorzinho que tiver
     menos de 500px de largura
 
-*/
 
-/* reset de css */
+ reset de css 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* top bar */
+ top bar 
 header {
-    /* cor e tamanho */
+     cor e tamanho 
     background-color: #FF5400;
     width: calc(100vw - (100vw / 100%));
     height: 70px;
 
-    /* alinha os itens */
+    alinha os itens 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    /* coloca padding horizontal de 120px */
+     coloca padding horizontal de 120px 
     padding: 0px calc(4vw);
 }
 
 /* esconde o menu */
-header #menu {
+/* header #menu {
     display: none;
-}
+} */
 
 /* menu quando clicar no botão*/
-#nav.active #menu {
+/* #nav.active #menu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -43,13 +41,13 @@ header #menu {
     right: 0px;
     background-color: #FF5400;
     padding: 20px 0px 20px 0px;
-}
+} */
 
 /* estilo do link */
-#nav.active #menu a {
+/* #nav.active #menu a {
     color: #F4F4F4;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     padding: 10px 10px;
-}
+} */
