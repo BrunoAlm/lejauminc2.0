@@ -46,10 +46,12 @@ section {
     font-size: 36px;
 }
 
-#tela1 img {
+#tela1 .coluna1 {
+    width: 100%;
+}
+#tela1 .coluna2 {
     display: none;
 }
-
 
 
 

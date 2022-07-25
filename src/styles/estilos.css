@@ -166,23 +166,54 @@ section {
 
 #tela1 .texto h1 {
     font-size: 45px;
-    line-height: 0.9;
     color: var(--laranjaum);
     text-transform: uppercase;
+    line-height: 1;
+
     /* text-align: center; */
 }
 
 #tela1 .texto .riscado {
     font-weight: 500;
-    line-height: 0.9;
     text-decoration-line: line-through;
 }
 
 #tela1 .texto .negrito {
     font-weight: 900;
-    line-height: 0.9;
 }
 
 #tela1 .botoes {
+    margin-top: 2rem;
     display: flex;
+}
+#tela1 .botoes button{
+    cursor: pointer;
+    margin-right: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 0px;
+}
+
+#tela1 .coluna1{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: var(--quase-white) 2px dashed;
+}
+#tela1 .coluna2{
+    height: 100%;
+    width: 20%;
+    border: var(--quase-white) 2px dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tela1 img {
+    width: 10px;
+    height: 10px;
 }
