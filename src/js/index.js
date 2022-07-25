@@ -1,9 +1,10 @@
-const btnMenu = document.getElementById('btn-menu');
+const btnMenu = document.getElementById('abre-menu');
 const btnVoltaMenu = document.getElementById('volta-menu');
 
 function toggleMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
+    const drawer = document.getElementById('nav-do-lado');
+    drawer.classList.toggle('expandiu');
+    btnMenu.classList.toggle('expandiu');
 }
 
 btnMenu.addEventListener('click', toggleMenu);

@@ -17,64 +17,129 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Georama';
+    transition: 500ms ease-in;
 }
 
-/* top bar */
-header {
-    /* cor e tamanho */
-    background-color: var(--laranjaum);
+html,
+body {
+    height: 100%;
+}
+
+#nav-em-cima {
     width: 100%;
     height: 70px;
+    background-color: var(--laranjaum);
+    padding: 0px 8vw;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px 1px #FF5400;
+}
 
-    /* alinha os itens */
+.logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    /* coloca padding horizontal de 120px */
-    padding: 0px 10vw;
-}
-
-/* logo com a marca */
-#marca {
-    font-family: 'Georama';
-    display: flex;
-    font-weight: 500;
-    line-height: 36px;
-    font-style: italic;
-    font-size: 30px;
     color: var(--quase-white);
     cursor: pointer;
-
+    padding: 5px 10px;
 }
 
-#nav {
-    display: none;
+.logo img {
+    height: 34px;
 }
 
-#btn-menu {
-    height: 40px;
+.logo p {
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#abre-menu {
     cursor: pointer;
+    padding: 5px;
+    height: 44px;
 }
 
-#volta-menu{
-    height: 100%;
-    width: 20vw;
-    background-color: var(--quase-white);
-    opacity: 90%;
+#abre-menu.expandiu {
+    margin-right: 25vw;
 }
 
-#nav.active {
-    display: flex;
-    position: absolute;
-    z-index: 1000;
-    top: 70px;
-    right: 0px;
-    width: 100%;
-    height: calc(100% - 70px);
+#abre-menu img {
+    height: 34px;
+}
+
+#nav-do-lado {
+    visibility: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
     background-color: var(--mais-black);
 }
 
-#menu {
-    padding: 100px;
+#nav-do-lado.expandiu {
+    visibility: visible;
+    display: flex;
+    width: 25vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
 }
+
+#menu-de-itens {
+    display: none;
+}
+
+#nav-do-lado.expandiu #menu-de-itens {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow-x: hidden;
+}
+
+#menu-de-itens img {
+    margin-bottom: 20%;
+    background-color: var(--laranjaum);
+    border-radius: 10px;
+    padding: 5px;
+    height: 60px;
+}
+
+#menu-de-itens li {
+    border: 2px solid var(--quase-white);
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+#menu-de-itens li:hover {
+    background-color: var(--quase-white);
+}
+
+#menu-de-itens li:hover a {
+    color: var(--quase-black);
+}
+
+#menu-de-itens a {
+    text-decoration: none;
+    color: var(--quase-white);
+    padding: inherit;
+}
+
+
+/* #volta-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--verde-good);
+    z-index: 100;
+} */
