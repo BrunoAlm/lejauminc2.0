@@ -1,8 +1,58 @@
-
-
-#volta-menu{ 
+/* 
+    Aqui tem os estilos do mobile menorzinho que tiver
+    menos de 500px de largura
+    */
+/* #volta-menu{ 
     width: 20vw;
+} */
+#nav-do-lado.expandiu {
+    width: 50%;
 }
+#volta-menu.expandiu {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 50%;
+    height: calc(100% - 70px);
+    /* background-color:#1d1d1d4d; */
+}
+section {
+    padding: 2rem 10px;
+}
+
+#tela1 {
+    align-items: center;
+}
+
+#tela1 .botoes {
+    display: flex;
+    margin: 40px 20px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tela1 .botoes button {
+    margin: 5px 5px;
+    padding: 5px 0px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+}
+
+#tela1 .texto h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#tela1 img {
+    display: none;
+}
+
+
+
+
 /* 
     Aqui tem os estilos do mobile menorzinho que tiver
     menos de 500px de largura

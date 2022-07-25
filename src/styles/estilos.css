@@ -18,12 +18,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Georama';
-    transition: 500ms ease-in;
+    transition: 200ms ease-in;
 }
 
 html,
 body {
     height: 100%;
+    background-color: var(--pretao);
+
 }
 
 #nav-em-cima {
@@ -79,6 +81,7 @@ body {
     right: 0;
     box-sizing: border-box;
     background-color: var(--mais-black);
+
 }
 
 #nav-do-lado.expandiu {
@@ -118,7 +121,7 @@ body {
     margin: 5px;
     text-align: center;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 
 #menu-de-itens li:hover {
@@ -135,6 +138,9 @@ body {
     padding: inherit;
 }
 
+#volta-menu {
+    display: none;
+}
 
 /* #volta-menu {
     position: absolute;
@@ -143,3 +149,40 @@ body {
     background-color: var(--verde-good);
     z-index: 100;
 } */
+
+section {
+    height: calc(100vh - 70px);
+    padding: 2rem 9rem;
+}
+
+#tela1 {
+    align-items: center;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+#tela1 .texto h1 {
+    font-size: 45px;
+    line-height: 0.9;
+    color: var(--laranjaum);
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+
+#tela1 .texto .riscado {
+    font-weight: 500;
+    line-height: 0.9;
+    text-decoration-line: line-through;
+}
+
+#tela1 .texto .negrito {
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+#tela1 .botoes {
+    display: flex;
+}

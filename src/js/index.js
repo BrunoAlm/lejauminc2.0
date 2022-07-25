@@ -5,6 +5,7 @@ function toggleMenu() {
     const drawer = document.getElementById('nav-do-lado');
     drawer.classList.toggle('expandiu');
     btnMenu.classList.toggle('expandiu');
+    btnVoltaMenu.classList.toggle('expandiu');
 }
 
 btnMenu.addEventListener('click', toggleMenu);
