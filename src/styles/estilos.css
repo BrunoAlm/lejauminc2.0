@@ -1,3 +1,8 @@
+/* 
+CTRL + F> TODO
+para ver o que fiz temporario
+*/
+
 /* cores da parada */
 :root {
     --roxinho: #72147E;
@@ -18,201 +23,280 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Georama';
+
+    /* animação quando mudam os tamanhos */
     transition: 200ms ease-in;
 }
 
+/* Aqui é um background pretao */
 html,
 body {
-    height: 100%;
     background-color: var(--pretao);
-
 }
 
+/* largura do scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Cor de fundo da scrollbar */
+::-webkit-scrollbar-track {
+    background: var(--quase-black);
+}
+
+/* Cor da scrollbar */
+::-webkit-scrollbar-thumb {
+    background: var(--laranjaum);
+}
+
+/* 
+ # seção da página
+ ## separei a tag section para ser do tamanho da tela
+ ## dentro da section vai ficar o conteúdo, com um padding
+*/
+section {
+    height: calc(100vh - 70px);
+    padding: 2rem 9rem;
+}
+
+/* classe para facilitar fazer rows */
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+ # navbar na parte de cima 
+ ## barra laranja, com 70px de altura, de lado a lada da tela
+ ## padding de 8% da largura da tela horizontal
+ ## alinhamento vertical no centro
+ ## alinhamento horizontal espaçado entre os itens
+ ## sombra laranja em baixo
+*/
 #nav-em-cima {
+    background-color: var(--laranjaum);
     width: 100%;
     height: 70px;
-    background-color: var(--laranjaum);
     padding: 0px 8vw;
-    align-items: center;
     display: flex;
-    z-index: 1;
+    align-items: center;
     justify-content: space-between;
     box-shadow: 0px 4px 8px 1px #FF5400;
+    z-index: 1;
 }
 
+/* 
+ # logo
+ ## aqui tem um icone e um texto
+ ## estão alinhados na horizontal
+ ## centralizados na vertical
+ ## com cor branca
+*/
 .logo {
     display: flex;
     align-items: center;
     color: var(--quase-white);
-    cursor: pointer;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
+/* tamanho do icone */
 .logo img {
     height: 34px;
 }
 
+/* estilo da fonte */
 .logo p {
     font-size: 32px;
     font-weight: 500;
     font-style: italic;
 }
 
+/* icone do botão */
+#abre-menu img {
+    height: 34px;
+}
+
+/* 
+ # icone que abre drawer
+ ## no arquivo index.js, esse id executa a função abreMenu()
+*/
 #abre-menu {
     cursor: pointer;
     padding: 5px;
     height: 44px;
 }
 
+/* movimenta o botão para esquerda e muda a cor de fundo */
 #abre-menu.expandiu {
-    margin-right: 25vw;
+    margin-right: 18vw;
+    background-color: var(--quase-black);
+    border-radius: 20px;
 }
 
-#abre-menu img {
-    height: 34px;
-}
-
+/* 
+ # drawer
+ ## inicialmente está escondido
+ ## tem posição fixa
+ ## altura maxima da tela
+ ## largura inicial é 0
+ ## posição em 0,0
+ ## background mais-black
+ */
 #nav-do-lado {
     visibility: hidden;
     position: fixed;
-    height: 100vh;
     width: 0;
     top: 0;
     right: 0;
     box-sizing: border-box;
     background-color: var(--mais-black);
-
 }
 
+/* 
+ # drawer expandido
+ ## ao clicar no botao "abre-menu" expande o drawer
+ ## fica visível na tela
+ ## muda a largura de 0 para 25% da largura da tela
+ ## exibe o conteúdo centralizado
+*/
 #nav-do-lado.expandiu {
     visibility: visible;
-    display: flex;
     width: 25vw;
-    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
 }
 
+/* esconde os itens do drawer até que o drawer esteja visível */
 #menu-de-itens {
     display: none;
 }
 
+/* uma div do drawer, centralizado com largura de 80% do drawer */
 #nav-do-lado.expandiu #menu-de-itens {
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 80%;
     overflow-x: hidden;
 }
 
+/* logo svg com background laranja arredondado */
 #menu-de-itens img {
-    margin-bottom: 20%;
     background-color: var(--laranjaum);
+    height: 60px;
     border-radius: 10px;
     padding: 5px;
-    height: 60px;
+    margin-bottom: 20%;
 }
 
+/* 
+ # itens do drawer
+ ## cada um tem borda e está centralizado
+*/
 #menu-de-itens li {
-    border: 2px solid var(--quase-white);
     width: 100%;
-    margin: 5px;
     text-align: center;
+    border: 2px solid var(--quase-white);
     border-radius: 50px;
+    margin: 5px;
     padding: 10px 0px;
 }
 
+/* ao fazer hover em um item ele muda a cor de fundo */
 #menu-de-itens li:hover {
     background-color: var(--quase-white);
 }
 
+/* estilo de texto e padding para click (TODO) */
+#menu-de-itens a {
+    text-decoration: none;
+    color: var(--quase-white);
+    padding: 10px 75px;
+}
+
+/* ao fazer hover em um item ele muda a cor do texto */
 #menu-de-itens li:hover a {
     color: var(--quase-black);
 }
 
-#menu-de-itens a {
-    text-decoration: none;
-    color: var(--quase-white);
-    padding: inherit;
-}
-
+/* isso só tem no mobile. desktop esconde */
 #volta-menu {
     display: none;
 }
 
-/* #volta-menu {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--verde-good);
-    z-index: 100;
-} */
-
-section {
-    height: calc(100vh - 70px);
-    padding: 2rem 9rem;
-}
-
+/* alinha no conteúdo no centro */
 #tela1 {
     align-items: center;
 }
 
-.linha {
-    display: flex;
-    flex-direction: row;
-}
-
+/* estilo do texto da primeira tela*/
 #tela1 .texto h1 {
     font-size: 45px;
     color: var(--laranjaum);
     text-transform: uppercase;
     line-height: 1;
-
-    /* text-align: center; */
 }
 
+/* estilo do texto que tem risco*/
 #tela1 .texto .riscado {
     font-weight: 500;
     text-decoration-line: line-through;
 }
 
+/* estilo do texto que ta em negrito*/
 #tela1 .texto .negrito {
     font-weight: 900;
 }
 
+/* div que envolve os botões para margem */
 #tela1 .botoes {
     margin-top: 2rem;
     display: flex;
 }
-#tela1 .botoes button{
+
+/* estilo dos botões */
+#tela1 .botoes button {
     cursor: pointer;
-    margin-right: 10px;
     width: 100px;
     border: none;
     border-radius: 20px;
+    margin-right: 10px;
     padding: 5px 0px;
 }
 
-#tela1 .coluna1{
+/* 
+ # primeira coluna
+ ## tem 80% da largura da tela
+ ## alinha os itens em coluna
+ ## centraliza na vertical
+ ## coloca no começo da linha na horizontal
+*/
+#tela1 .coluna1 {
     height: 100%;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border: var(--quase-white) 2px dashed;
 }
-#tela1 .coluna2{
+
+/* TODO
+ # segunda coluna
+ ## tem 20% da largura da tela pra caber
+ */
+#tela1 .coluna2 {
     height: 100%;
     width: 20%;
-    border: var(--quase-white) 2px dashed;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* FOGUETÃO TODO */
 #tela1 img {
     width: 10px;
     height: 10px;

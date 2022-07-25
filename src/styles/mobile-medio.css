@@ -1,0 +1,19 @@
+section {
+    padding: 2rem 2rem;
+}
+ 
+
+#tela1 .botoes {
+    display: flex;
+    /* margin: 40px 150px;
+    flex-flow: row wrap; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* #tela1 .botoes button:nth-child(3){ 
+    margin-top: 10px;
+}
+#tela1 .botoes button:nth-child(4){ 
+    margin-top: 10px;
+} */
