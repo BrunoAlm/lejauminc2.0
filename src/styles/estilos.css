@@ -149,6 +149,7 @@ section {
     width: 0;
     top: 0;
     right: 0;
+    height: 100%;
     box-sizing: border-box;
     background-color: var(--mais-black);
 }
