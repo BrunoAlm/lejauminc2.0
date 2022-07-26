@@ -4,7 +4,7 @@
 */
 
 #nav-do-lado.expandiu #menu-de-itens {
-    width: 80%;
+    width: 60%;
 }
 
 #menu-de-itens a {
@@ -12,16 +12,18 @@
 }
 
 #nav-do-lado.expandiu {
-    width: 50%;
+    width: 80%;
 }
 
 #volta-menu.expandiu {
     display: block;
+    visibility: visible;
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
-    width: 50%;
-    height: calc(100% - 70px);
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
 }
 
 section {
