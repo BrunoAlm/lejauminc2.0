@@ -30,31 +30,57 @@ section {
     padding: 2rem 0px;
 }
 
-#tela1 {
+#home {
     align-items: center;
 }
 
-#tela1 .botoes {
-    margin: 40px 60px;
+#home .botoes {
+    margin: 40px 20px;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
 
-#tela1 .botoes button {
+#home .botoes .button {
     margin: 5px 5px;
     padding: 5px 0px;
 }
 
-#tela1 .texto h1 {
+
+#home .texto h1 {
     text-align: center;
     font-size: 36px;
 }
 
-#tela1 .coluna1 {
+#home .coluna1 {
     width: 100%;
 }
 
-#tela1 .coluna2 {
+#home .coluna2 {
     display: none;
+}
+
+#sobre .boxes {
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#sobre .boxes .box {
+    margin-top: 10px;
+}
+#sobre .boxes .linha {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#sobre .boxes .box {
+    width: 350px;
+    padding: 10px;
+}
+#sobre .box-margin {
+    margin: 0;
+}
+#sobre .boxes .button {
+    margin-top: 20px!important;
 }

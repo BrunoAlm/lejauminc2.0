@@ -15,6 +15,7 @@
 
     <!-- INÍCIO - CSS -->
     <link rel="stylesheet" href="./styles/estilos.css">
+    <link rel="stylesheet" href="./styles/menu_hamburguer.css">
     <link rel="stylesheet" media="screen and (max-width: 500px)" href="./styles/mobile-pequeno.css">
     <!-- <link rel="stylesheet" media="screen and (max-width: 960px)" href="./styles/mobile-medio.css">
     <link rel="stylesheet" media="screen and (max-width: 1180px)" href="./styles/desktop-pequeno.css">
@@ -37,10 +38,12 @@
 
     <!-- isso aqui seria o appbar -->
     <nav id="nav-em-cima">
-        <div class="logo">
-            <img src="./img/svg/logo.svg" alt="logo">
-            <p>lejaum</p>
-        </div>
+        <a href="#home-ancora">
+            <div class="logo">
+                <img src="./img/svg/logo.svg" alt="logo">
+                <p>lejaum</p>
+            </div>
+        </a>
         <div id="abre-menu">
             <span></span>
             <span></span>
@@ -55,35 +58,85 @@
     <nav id="nav-do-lado">
         <ul id="menu-de-itens">
             <img src="./img/svg/logo.svg" alt="logo">
-            <li> <a href="/">Início</a></li>
-            <li> <a href="/">Sobre</a></li>
-            <li> <a href="/">Portfólio</a></li>
+            <li> <a href="#home-ancora">Início</a></li>
+            <li> <a href="#sobre-ancora">Sobre</a></li>
+            <li> <a href="#socialmedia1-ancora">Portfólio</a></li>
             <li> <a href="/">Ver Planos</a></li>
             <li> <a href="/">WhatsApp</a></li>
             <li> <a href="/">Avaliações</a></li>
         </ul>
     </nav>
-
-    <section id="tela1" class="linha">
+    <!-- ancora tela 1 -->
+    <div id="home-ancora"></div>
+    <section id="home" class="linha">
         <div class="coluna1">
             <div class="texto">
                 <h1 class="riscado">Não vendemos serviços,</h1>
                 <h1 class="negrito">nós entregamos soluções!</h1>
             </div>
             <div class="botoes">
-                <button>Saber Mais</button>
-                <button>Portfólio</button>
-                <button>Ver Planos</button>
-                <button>WhatsApp</button>
+                <a href="#sobre-ancora">
+                    <div class="linha button">
+                        <img src="./img/svg/buttons/arrow-circle-down-outline.svg" alt="circle-outilined">
+                        <p>Saber Mais</p>
+                    </div>
+                </a>
+                <a href="#socialmedia1-ancora">
+                    <div class="linha button">
+                        <img src="./img/svg/buttons/arrow-circle-down-outline.svg" alt="circle-outilined">
+                        <p>Portfólio</p>
+                    </div>
+                </a>
+                <div class="linha button">
+                    <img src="./img/svg/buttons/credit-card-outline.svg" alt="circle-outilined">
+                    <p>Ver Planos</p>
+                </div>
+                <div class="linha button">
+                    <img src="./img/svg/buttons/whatsapp.svg" alt="circle-outilined">
+                    <p>WhatsApp</p>
+                </div>
             </div>
         </div>
         <div class="coluna2"><img src="/src/img/astronauta2.png" alt="astronauta"></div>
     </section>
 
-    <section>
-
+    <!-- ancora tela 2 -->
+    <div id="sobre-ancora"></div>
+    <section id="sobre">
+        <div class="boxes">
+            <p>O que nós oferecemos:</p>
+            <div class="linha">
+                <div class="box">
+                    <img src="./img/png/boxes/5dedo.png" alt="">
+                    <p>Seja reconhecido pelo seus clientes e fidelize eles com <strong>identidade visual</strong> </p>
+                </div>
+                <div class="box box-margin">
+                    <img src="./img/png/boxes/like.png" alt="">
+                    <p>Desenvolva relacionamento com seu público com nosso <strong>social media</strong> </p>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="box">
+                    <img src="./img/png/boxes/notifica.png" alt="">
+                    <p>Apareça no digital para a pessoa certa, no momento certo com <strong>tráfego pago</strong></p>
+                </div>
+                <div class="box box-margin">
+                    <img src="./img/png/boxes/graficuzinho.png" alt="">
+                    <p>Transforme seus Leads em Vendas com <strong>marketing</strong></p>
+                </div>
+            </div>
+            <a href="#socialmedia1-ancora">
+                <div class="linha button">
+                    <img src="./img/svg/buttons/arrow-circle-down-outline.svg" alt="circle-outilined">
+                    <p>Ver Portfólio</p>
+                </div>
+            </a>
+        </div>
     </section>
 
+    <!-- ancora tela 3 -->
+    <div id="socialmedia1-ancora" class="linha"></div>
+    <section id="socialmedia1"></section>
     <script src="./js/index.js" async defer></script>
 </body>
 
