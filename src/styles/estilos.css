@@ -33,6 +33,7 @@ html,
 body {
     scroll-behavior: smooth;
     background-color: var(--pretao);
+    overflow-x: hidden;
 }
 
 /* largura do scrollbar */
@@ -58,6 +59,9 @@ body {
 section {
     height: calc(100vh);
     padding: 2rem 9rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 
 a {
@@ -359,4 +363,34 @@ a {
 
 #sobre .button {
     margin-top: 40px!important;
+}
+
+
+/* tela 3 */
+
+#socialmedia1 h1 {
+    color: var(--laranjaum);
+}
+#carrossel {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    padding: 0px;
+    margin-left: -10%;
+    /* margin-left: -13%;
+    margin-right: +30%;
+    padding-bottom: 20px; */
+    display: flex;
+    list-style: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.item-carrossel {
+    height: 100%;
+    margin-right: 10px;
+    width: 200px;
+    border: 1px white dashed;
+    border-radius: 20px;
+    margin-top: 10px;
 }
