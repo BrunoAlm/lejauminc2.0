@@ -1,5 +1,6 @@
 // CARROSSEL
 const track = document.getElementById('carrossel');
+const track2 = document.getElementById('carrossel2');
 let initialPosition = null;
 let moving = false;
 let transform = 0;
@@ -29,19 +30,43 @@ const gestureMove = (e) => {
 }
 
 const gestureEnd = (e) => {
+  const currentPosition = e.pageX;
+  const diff = currentPosition - initialPosition;
+  console.log(e.pageX);
+  if (diff > 0) {
+    track.style.transform = `translateX(0px)`;
+  }
+  
   moving = false;
 }
 
 if (window.PointerEvent) {
-  window.addEventListener('pointerdown', gestureStart);
-  window.addEventListener('pointermove', gestureMove);
-  window.addEventListener('pointerup', gestureEnd);
+  track.addEventListener('pointerdown', gestureStart);
+  track.addEventListener('pointermove', gestureMove);
+  track.addEventListener('pointerup', gestureEnd);
 } else {
-  window.addEventListener('touchstart', gestureStart);
-  window.addEventListener('touchmove', gestureMove);
-  window.addEventListener('touchend', gestureEnd);
+  track.addEventListener('touchstart', gestureStart);
+  track.addEventListener('touchmove', gestureMove);
+  track.addEventListener('touchend', gestureEnd);
 
-  window.addEventListener('mousedown', gestureStart);
-  window.addEventListener('mousemove', gestureMove);
-  window.addEventListener('mouseup', gestureEnd);
+  track.addEventListener('mousedown', gestureStart);
+  track.addEventListener('mousemove', gestureMove);
+  track.addEventListener('mouseup', gestureEnd);
 }
+if (window.PointerEvent) {
+  track2.addEventListener('pointerdown', gestureStart);
+  track2.addEventListener('pointermove', gestureMove);
+  track2.addEventListener('pointerup', gestureEnd);
+} else {
+  track2.addEventListener('touchstart', gestureStart);
+  track2.addEventListener('touchmove', gestureMove);
+  track2.addEventListener('touchend', gestureEnd);
+
+  track2.addEventListener('mousedown', gestureStart);
+  track2.addEventListener('mousemove', gestureMove);
+  track2.addEventListener('mouseup', gestureEnd);
+}
+
+
+
+
