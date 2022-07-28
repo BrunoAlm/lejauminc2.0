@@ -268,15 +268,16 @@ a {
 
 .button img {
     height: 20px;
-    margin: 0!important;
-    margin-right: 5px!important;
-    padding: 0!important;
+    margin: 0 !important;
+    margin-right: 5px !important;
+    padding: 0 !important;
     width: 20px;
 }
+
 .button p {
     color: var(--quase-white);
-    font-size: 14px!important;
-    font-weight: 400!important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
 }
 
 /* 
@@ -362,7 +363,7 @@ a {
 }
 
 #sobre .button {
-    margin-top: 40px!important;
+    margin-top: 40px !important;
 }
 
 
@@ -371,26 +372,37 @@ a {
 #socialmedia1 h1 {
     color: var(--laranjaum);
 }
+
 #carrossel {
-    position: absolute;
-    height: 50%;
+    height: 400px;
     width: 100%;
-    padding: 0px;
-    margin-left: -10%;
-    /* margin-left: -13%;
-    margin-right: +30%;
-    padding-bottom: 20px; */
+    position: absolute;
     display: flex;
-    list-style: none;
-    overflow-x: auto;
-    overflow-y: hidden;
+    padding: 20px;
+    border-left: 2px var(--verde-good) dashed;
+
+    transition: linear 1ms!important;
 }
 
-.item-carrossel {
-    height: 100%;
-    margin-right: 10px;
-    width: 200px;
-    border: 1px white dashed;
-    border-radius: 20px;
-    margin-top: 10px;
+#carrossel img {
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 10px;
 }
+/* 
+#carrossel2 {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    border-left: 2px var(--verde-good) dashed;
+
+    transition: linear 1ms!important;
+}
+
+#carrossel2 img {
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 10px;
+} */
