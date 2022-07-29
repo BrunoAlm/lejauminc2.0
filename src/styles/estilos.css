@@ -374,10 +374,10 @@ a {
     color: var(--laranjaum);
 }
 
-#carrossel {
+.carrossel {
     height: 245px;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     margin-left: -10%;
     display: flex;
     padding: 10px;
@@ -386,13 +386,13 @@ a {
     transition: linear 1ms!important;
 }
 
-#carrossel img {
+.carrossel img {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 10px;
 }
 
-#carrossel2 {
+/* #carrossel2 {
     margin-top: 245px;
     height: 245px;
 
@@ -401,7 +401,7 @@ a {
     margin-left: -10%;
     display: flex;
     padding: 10px;
-    /* border-left: 2px var(--verde-good) dashed; */
+    /* border-left: 2px var(--verde-good) dashed; 
     z-index: 1;
     transition: linear 1ms!important;
 }
@@ -413,4 +413,9 @@ a {
 }
 
 
+ */
 
+
+ #solucoes {
+
+ }
