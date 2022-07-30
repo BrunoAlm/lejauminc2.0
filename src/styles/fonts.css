@@ -1,0 +1,43 @@
+h1 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 33px;
+    color: var(--laranjaum);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--laranjaum);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: var(--laranjaum);
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--laranjaum);
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--quase-white);
+}
+
+a {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--roxinho);
+
+}
