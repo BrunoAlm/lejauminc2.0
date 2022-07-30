@@ -13,9 +13,10 @@
     height: 70%;
     width: 100%;
     display: flex;
-    align-content: space-between;
+    align-content: center;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #solucoes h3 {
@@ -24,8 +25,8 @@
 }
 
 #cards .list-tile {
-    height: 55px;
-    width: 260px;
+    min-height: 55px;
+    min-width: 260px;
     margin: 10px 10px;
     padding: 0px 20px;
     display: flex;
@@ -33,6 +34,7 @@
     align-content: center;
     justify-content: space-between;
     cursor: pointer;
+
     background: #1A1918;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
     border-radius: 18.3876px;
