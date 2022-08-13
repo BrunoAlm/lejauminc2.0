@@ -36,6 +36,10 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    color: var(--laranjaum);
+}
+
 /* largura do scrollbar */
 ::-webkit-scrollbar {
     width: 5px;
@@ -320,3 +324,76 @@ a {
 }
 
 
+<<<<<<< HEAD
+=======
+#sobre .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sobre p {
+    color: var(--quase-white);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#sobre .box p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+
+}
+
+#sobre .boxes .box {
+    display: flex;
+    align-items: center;
+    padding: 10px 70px 10px 30px;
+    width: 450px;
+    /* height: 100px; */
+    border: 4px var(--laranjaum) solid;
+    border-radius: 24px;
+}
+
+#sobre .boxes .box img {
+    height: 70px;
+    margin-right: 20px;
+}
+
+#sobre .boxes .linha {
+    margin-top: 20px;
+}
+
+#sobre .box-margin {
+    margin-left: 20px;
+}
+
+#sobre .button {
+    margin-top: 40px !important;
+}
+
+
+/* tela 3 */
+
+#socialmedia1 {
+    padding-top: 100px;
+ }
+ /*
+.carrossel {
+    height: 225px;
+    width: 100%;
+    /* position: absolute; 
+    margin-left: -10%;
+    display: flex;
+    padding: 10px;
+    /* border-left: 2px var(--verde-good) dashed; 
+    z-index: 1;
+    transition: linear 1ms!important;
+}
+
+.carrossel img {
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 10px;
+} */
+>>>>>>> 42b0ed2 (aaaaaaa)

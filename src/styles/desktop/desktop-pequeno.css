@@ -2,6 +2,14 @@
     Aqui tem os estilos do mobile menorzinho que tiver
     menos de 1100px  de largura
 */
-section {
-    padding: 2rem 2rem;
+@media only screen and (min-width: 1366px) {
+    
+    section {
+        padding: 2rem 2rem;
+    }
+
+    #carrossel {
+        position: absolute !important;
+        width: 100%;
+    }
 }
