@@ -3,7 +3,7 @@ $('.carrossel').slick({
     arrows: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 6,
+    slidesToShow: 9,
     slidesToScroll: 2,
     responsive: [
       {
