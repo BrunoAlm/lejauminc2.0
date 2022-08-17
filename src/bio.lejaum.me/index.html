@@ -84,7 +84,11 @@
         }
 
         .botao img {
-            height: 25px;
+            width: 25px;
+        }
+        
+        .botao:nth-child(3) img {
+            width: 20px;
         }
 
         .botao p {
@@ -94,9 +98,9 @@
         .popup {
             position: absolute;
             padding: 10px 20px;
-            bottom: 0px;
-            left: 34%;
-            height: 169.67px;
+            top: 0px;
+            left: 10px;
+            height: 139.67px;
             width: 31%;
             background: #F4F4F4;
             box-shadow: 527px 437px 274px rgba(0, 0, 0, 0.01), 296px 246px 231px rgba(0, 0, 0, 0.05), 132px 109px 171px rgba(0, 0, 0, 0.09), 33px 27px 94px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -109,21 +113,20 @@
             display: block;
             visibility: visible;
 
-            bottom: 50px;
+            top: 10px;
         }
 
         .popup p {
             margin-top: 7px;
             text-align: center;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 133.4%;
         }
 
         .popup .linha {
             justify-content: space-between;
         }
-
 
         .popup .linha .atencao {
             font-weight: 600;
@@ -136,6 +139,8 @@
         }
 
         .popup .cinzinha {
+            margin-top: 0;
+
             color: #7D7D7D;
             font-style: italic;
         }
@@ -144,7 +149,6 @@
             height: 25px;
             cursor: pointer;
         }
-
 
         .direitos {
             font-size: 12px;
@@ -182,17 +186,22 @@
             }
 
             .popup {
+                top: 0;
                 padding: 10px 20px;
-                left: 10%;
-                height: 169.67px;
+                left: 20px;
                 width: 80%;
-                height: 35%;
+                height: 220px;
+            }
+
+            #popup.aparece .popup {
+                display: block;
+                visibility: visible;
+                top: 20px;
             }
 
             .popup .linha .atencao {
                 font-size: 16px;
             }
-
 
             .popup p {
                 font-size: 16px;
@@ -205,7 +214,6 @@
             .direitos .mb {
                 display: flex;
             }
-
         }
 
         @media only screen and (min-width: 1700px) {
@@ -233,12 +241,13 @@
                 font-size: 18px;
             }
 
-
+            .popup {
+                height: 169.67px;
+            }
 
             .popup .linha .atencao {
                 font-size: 18px;
             }
-
 
             .popup p {
                 font-size: 18px;
