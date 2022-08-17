@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lejaum</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FF5400;
+            background-image: url("./img/pattern.png");
+            font-family: 'Georama', sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            height: 100vh;
+        }
+
+        .linha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo img {
+            height: 80px;
+        }
+
+        .titulo h1 {
+            color: whitesmoke;
+            font-size: 80px;
+            font-style: italic;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 300;
+            color: whitesmoke;
+        }
+
+        .botoes {
+            margin-top: 60px;
+        }
+
+        .botao:hover {
+            transform: scaleX(1.02);
+        }
+
+        .botoes a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .botao {
+            margin: 10px 0;
+            background-color: rgba(0, 0, 0, 0.658);
+            padding: 15px 60px;
+            border-radius: 50px;
+        }
+
+        .botao img {
+            height: 25px;
+        }
+
+        .botao p {
+            margin-left: 10px;
+        }
+
+        @media only screen and (min-width: 1700px) {
+            .titulo h1 {
+                font-size: 120px;
+            }
+
+            .titulo img {
+                height: 120px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .botao p {
+                font-size: 20px;
+            }
+
+            .botao img {
+                height: 30px;
+            }
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="titulo linha">
+            <img src="./img/logo.svg" alt="logo">
+            <h1>lejaum</h1>
+        </div>
+        <h2 class="subtitulo">agência de design e marketing</h2>
+        <div class="botoes">
+            <a href="" class="botao linha">
+                <img src="./img/browser-icon.svg" alt="icone">
+                <p>Site Portfólio</p>
+            </a>
+            <a href="" class="botao linha">
+                <img src="./img/whatsapp-icon.svg" alt="icone">
+                <p>Whatsapp</p>
+            </a>
+            <a href="" class="botao linha">
+                <img src="./img/instagram-icon.svg" alt="icone">
+                <p>Instagram</p>
+            </a>
+            <a href="" class="botao linha">
+                <img src="./img/email-icon.svg" alt="icone">
+                <p>E-mail</p>
+            </a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
