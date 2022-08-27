@@ -373,7 +373,15 @@ a {
 /* tela 3 */
 
 #socialmedia1 {
-    padding-top: 100px;
+    padding: 0;
+ }
+
+ #socialmedia1 h1 {
+    padding-left: 9rem;
+ }
+ .slick-track img {
+    margin: 5px;
+    border-radius: 15.0318px;
  }
  /*
 .carrossel {
