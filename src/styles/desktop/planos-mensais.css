@@ -1,0 +1,64 @@
+#planos-mensais h1 {
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    /* identical to box height */
+    text-align: center;
+}
+
+#planos-mensais p {
+    font-family: 'Georama';
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    color: var(--cinzou);
+}
+
+#planos-mensais .planos {
+    height: 350px;
+    width: 100%;
+    margin: 20px 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#planos-mensais .planos .plano {
+    height: 350px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#planos-mensais .planos .plano:nth-child(2) {
+    margin: 0px 30px;
+}
+
+#planos-mensais .planos .plano h3 {
+    text-align: center;
+}
+
+#planos-mensais .planos .plano:nth-child(2) h3,
+#planos-mensais .planos .plano:nth-child(3) h3 {
+    color: white;
+}
+
+#planos-mensais .planos .plano .card {
+    width: 100%;
+    margin-top: 10px;
+    height: calc(350px - 25px - 10px);
+    background: #F4F4F4;
+    box-shadow: 0px 0.990432px 4.95216px #000000;
+    border-radius: 10.9816px;
+
+}
+
+#planos-mensais .planos .plano:nth-child(2) .card,
+#planos-mensais .planos .plano:nth-child(3) .card {
+    height: calc(350px - 25px - 10px - 30px);
+}

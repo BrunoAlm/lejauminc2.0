@@ -1,86 +1,96 @@
-/* 
+@media only screen and (max-width: 600px) {
+    /* 
     Aqui tem os estilos do mobile menorzinho que tiver
     menos de 500px de largura
 */
-
-#nav-do-lado.expandiu #menu-de-itens {
-    width: 60%;
+body {
+    height: 100vh;
 }
 
-#menu-de-itens a {
-    padding: 10px 25px;
-}
+    #nav-do-lado.expandiu #menu-de-itens {
+        width: 60%;
+    }
 
-#nav-do-lado.expandiu {
-    width: 80%;
-}
+    #menu-de-itens a {
+        padding: 10px 25px;
+    }
 
-#volta-menu.expandiu {
-    display: block;
-    visibility: visible;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.233);
-}
+    #nav-do-lado.expandiu {
+        width: 80%;
+    }
 
-section {
-    padding: 2rem 0px;
-}
+    #volta-menu.expandiu {
+        display: block;
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.233);
+    }
 
-#home {
-    align-items: center;
-}
+    section {
+        padding: 2rem 0px;
+    }
 
-#home .botoes {
-    margin: 40px 20px;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
+    #home {
+        align-items: center;
+    }
 
-#home .botoes .button {
-    margin: 5px 5px;
-    padding: 5px 0px;
-}
+    #home .botoes {
+        margin: 40px 20px;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home .botoes .button {
+        margin: 5px 5px;
+        padding: 5px 0px;
+    }
 
 
-#home .texto h1 {
-    text-align: center;
-    font-size: 36px;
-}
+    #home .texto h1 {
+        text-align: center;
+        font-size: 36px;
+    }
 
-#home .coluna1 {
-    width: 100%;
-}
+    #home .coluna1 {
+        width: 100%;
+    }
 
-#home .coluna2 {
-    display: none;
-}
+    #home .coluna2 {
+        display: none;
+    }
 
-#sobre .boxes {
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-#sobre .boxes .box {
-    margin-top: 10px;
-}
-#sobre .boxes .linha {
-    display: flex;
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#sobre .boxes .box {
-    width: 350px;
-    padding: 10px;
-}
-#sobre .box-margin {
-    margin: 0;
-}
-#sobre .boxes .button {
-    margin-top: 20px!important;
+    #sobre .boxes {
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #sobre .boxes .box {
+        margin-top: 10px;
+    }
+
+    #sobre .boxes .linha {
+        display: flex;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #sobre .boxes .box {
+        width: 350px;
+        padding: 10px;
+    }
+
+    #sobre .box-margin {
+        margin: 0;
+    }
+
+    #sobre .boxes .button {
+        margin-top: 20px !important;
+    }
 }

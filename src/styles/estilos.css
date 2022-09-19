@@ -370,20 +370,22 @@ a {
 }
 
 
-/* tela 3 */
+/* tela 3 social media*/
 
 #socialmedia1 {
     padding: 0;
- }
+}
 
- #socialmedia1 h1 {
+#socialmedia1 h1 {
     padding-left: 9rem;
- }
- .slick-track img {
+}
+
+.slick-track img {
     margin: 5px;
     border-radius: 15.0318px;
- }
- /*
+}
+
+/*
 .carrossel {
     height: 225px;
     width: 100%;
@@ -402,3 +404,22 @@ a {
     border-radius: 10px;
 } */
 
+/* tela 4 id visual 1 */
+
+#identidadeVisual {
+    padding: 0;
+}
+#identidadeVisual h1 {
+    padding-left: 9rem;
+}
+
+#identidadeVisual2 {
+    padding: 0;
+}
+#identidadeVisual2 h1 {
+    padding-left: 9rem;
+}
+
+#identidadeVisual2 .logo {
+    width: 200px !important;
+}
